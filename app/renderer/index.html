@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Manager</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <button onclick="App.camera.open()" class="camera-button">Câmera</button>
+  <hr />
+  
+  <ul id="breadcrumb-list"></ul>
+  <hr />
+  <ul id="folder-list"></ul>
+  <hr />
+  <ul id="file-list"></ul>
+  <script>
+    const App = require('./js');
+    App.fileManagerTemplate.init();
+  </script>
+</body>
+</html>

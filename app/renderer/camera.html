@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Manager - Camera</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <video id="camera-video" width="640" height="480" autoplay></video>
+  <div class="camera-buttons">
+    <button class="camera-button" onclick="App.camera.snapshot()">
+      Tirar foto
+    </button>
+    <button class="camera-button" onclick="App.camera.close()">
+      Fechar
+    </button>
+  </div>
+  <script>
+    const App = require('./js');
+    App.camera.start();
+  </script>
+</body>
+</html>
